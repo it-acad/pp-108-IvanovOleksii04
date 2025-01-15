@@ -1,0 +1,10 @@
+
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h2>Create Order for {{ book.name }}</h2>
+  <form method="POST">
+    {% csrf_token %}
+    <button type="submit">Create Order</button>
+  </form>
+{% endblock %}
